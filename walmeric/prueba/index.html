@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Walmeric</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body> 
+      <div id="content" class="box">
+          
+          <h2>Formulario de contacto</h2>
+
+          <form action="#" method="POST" id="formulario" onsubmit="return false;">
+        
+            <p>
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" id="nombre"> 
+              <span id="error_nombre"></span>           
+            </p>
+ 
+            <p>
+                <label for="apellido">Apellidos</label>
+                <input type="text" name="apellido" id="apellido">
+                <span id="error_apellido"></span>            
+            </p>        
+            
+            <p>
+              <label for="edad">Edad</label>
+              <input type="number" name="edad" id="edad">
+              <span id="error_edad"></span>
+            </p>
+        
+            <p>
+              <label for="email">Correo electronico</label>
+              <input type="email" name="email">
+              <span id="error_edad"></span>
+            </p>
+
+            <p>
+                <label for="category">Categoría</label>
+                <input type="text" name="category" id="categoria">
+                <span id="error_categoria"></span>          
+            </p>
+            
+
+            <p>
+                <label for="description">Descripción</label>
+                <textarea name="description" id="descripcion" cols="15" rows="10"></textarea> 
+                <span id="error_edad"></span>          
+            </p>  
+        
+            <p>
+              <label for="image">Imagen del proyecto</label>
+              <input type="file" name="image" placeholder="Subir imagen" >
+            </p>
+        
+            <input type="submit" id="submit" value="Enviar">
+
+            <div class="dashed">
+                <h3>Informacion del usuario</h3>
+                <hr>
+                    <p id="p_nombre">
+                        Nombre: <span></span>
+                    </p>
+                    <p id="p_apellido">
+                            Apellidos: <span></span>
+                    </p>
+                    <p id="p_edad">
+                            Edad: <span></span>
+                    </p>
+              </div>
+
+         </form>
+       
+         
+    </div>  
+    
+  
+
+      
+</body>
+</html>

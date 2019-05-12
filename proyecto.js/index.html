@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Proyecto con JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+    
+
+    <!--jQuery-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!--SLIDER-->
+    <link rel="stylesheet" href="js/bxslider-4-4.2.12/src/css/jquery.bxslider.css">
+    
+    <script src="js/bxslider-4-4.2.12/src/js/jquery.bxslider.js"></script>
+     <!-- fin del SLIDER--> 
+     <!--Moment js-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+    <!--mis scripts-->
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div id="selector-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+
+    </div>
+
+    <!--CABECERA-->
+    <section id="wrapper">
+        <header>
+            <div id="logo">
+               <h1>Proyecto js</h1> 
+            </div>
+            <div class="clearfix"></div>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="reloj.html">Reloj</a></li>
+                        <li><a href="about.html">Sobre mi</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </nav>
+        </header>
+        
+        <!--slider-->
+        <div id="slider">
+                <div class="galeria">
+                        <div><img src="img/hojas.jpg" title="Hojas"></div>
+                        <div><img src="img/rojo.jpg" title="Rojo"></div>
+                        <div><img src="img/cielo.jpg" title="Cielo"></div>
+                </div>
+        </div>
+        <!--Contenido-->
+        <section id="contenido">
+            <div id="posts">
+                <!--Cargar posts desde json-->               
+            </div>
+
+            <aside id="sidebar">
+                <div id="about">
+                    <h4><span>¿Quien soy?</span></h4>
+                    <img src="img/caracol.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ut in voluptatibus voluptatum .</p>
+                </div>
+                <div id="login">
+                        <h4><span>Identificate</span></h4>
+                        <form >
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="form_name">
+                            <label for="email">Email</label>
+                            <input type="text" name="email">
+                            <label for="password">Password</label>
+                            <input type="password" name="password">
+                            <input type="submit" value="Entrar">
+                        </form>
+                </div>
+            </aside>
+
+            <div class="clearfix"></div>
+        </section>
+    
+    </section>
+    <footer>
+        Pie de pagina &copy
+
+        <a href="#" class="subir">Ir arriba</a>
+    </footer>
+    
+</body>
+</html>

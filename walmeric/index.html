@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body> 
+    <!--
+        1. Formulario campos: nombre, apellidos edad
+        2. Boton para enviar el formulario: evento submit
+        3. Mostrar datos por pantalla
+        4. Validacion del formulario
+    -->
+    <div id="contain">
+        <div id="wrapper">
+                <h2>Formulario de contacto</h2>
+            <div class="datos ">
+                <h3>Informacion del usuario</h3>
+                <hr>
+                    <p id="p_nombre">
+                        Nombre: <span></span>
+                    </p>
+                    <p id="p_apellido">
+                            Apellidos: <span></span>
+                    </p>
+                    <p id="p_edad">
+                            Edad: <span></span>
+                    </p>
+                    <p id="p_email">
+                            Email: <span></span>
+                    </p>
+                    <p id="p_telefono">
+                           Telefono: <span></span>
+                    </p>
+                    <p id="p_description">
+                            Descripión: <span></span>
+                    </p>
+            </div>
+
+            <div id="content" class="form">      
+        
+                    <form action="#" method="POST" target="_blank" id="formulario" onsubmit="return false;">
+                            
+                    <p>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" title="Introduce tu nombre" 
+                        pattern="[A-Za-z\s,.'-]{3,20}" > 
+                        <span id="error_nombre"></span>          
+                    </p>
+        
+                    <p>
+                        <label for="apellido">Apellidos</label>
+                        <input type="text" name="apellido" id="apellido" title="Introduce tus apellidos" pattern="[A-Za-z\s,.'-]{3,20}">
+                        <span id="error_apellido" ></span>            
+                    </p>        
+                    
+                    <p>
+                        <label for="edad">Edad</label>
+                        <input type="number" name="edad" id="edad" title="Introduce tu edad" >
+                        <span id="error_edad"></span>
+                    </p>
+                
+                    <p>
+                        <label for="email">Correo electronico</label>
+                        <input type="email" name="email" id="email" title="Introduce tu correo electronico"
+                        pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" >
+                        <span id="error_email"></span>
+                    </p>
+        
+                    <p>
+                        <label for="phone">Telefono</label>
+                        <input type="phone" name="phone" id="telefono" title="Introduce un telefono valido" >
+                        <span id="error_phone"></span>          
+                    </p>
+                                
+                    <p>
+                        <label for="description">Descripción</label>
+                        <textarea name="description" id="descripcion" title="Introduce una descripcíón" cols="30" rows="7" ></textarea> 
+                        <span id="error_description"></span>          
+                    </p>  
+                
+                    <input type="submit" id="submit" value="Enviar">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

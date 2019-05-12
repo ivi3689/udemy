@@ -1,0 +1,82 @@
+/*Estilos generales*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+  font-size: 18px;
+  background:url("img/pattern.png");
+  background-attachment: fixed;
+}
+/*Contenedor principal*/
+
+#content{
+  padding-top: 20px;
+  width: 75%;
+  margin: 0px auto;
+  box-shadow: 0px 0px 40px black;
+  border-left: 1px solid #b7b7b7;
+  background:rgba(255, 255, 255, 0.7);
+}  
+
+.box{
+  width: 500px;
+  height: auto;
+  margin:20px;
+  padding: 50px;
+  padding-top:10px;
+}
+h2{
+  text-align: center;
+  text-transform: uppercase;
+}
+.box h2{
+  display: block;
+  border-bottom:1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+/*Estilos para el formulario*/
+
+form{
+  width: 100%;
+}
+form label{
+  display: block;
+  width: 50%;
+  margin-top:10px;
+  margin-bottom: 5px;
+}
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form textarea{
+  width: 40%;
+  padding: 5px;
+}
+
+form button,
+form input[type="submit"]{
+  font-size: 17px;
+  padding: 10px;
+  display:block;
+  margin-top: 15px;
+  color:white;
+  background:  rgba(53, 103, 164, 1);
+  border: 1px solid rgb(24, 9, 112);
+  cursor: pointer;
+}
+form button:hover,
+form input[type="submit"]:hover{
+  background:  rgba(53, 103, 164, 0.7);
+  border: 1px solid rgba(13, 67, 133, 1);
+}
+
+.dashed{
+
+  float:right;
+  border:3px dashed black;
+  padding: 5px;
+}
